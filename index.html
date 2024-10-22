@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schul-Vertretungsplan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Schul-Vertretungsplan</h1>
+    </header>
+    <main>
+        <section id="ausfallErfassung">
+            <h2>Ausfälle erfassen</h2>
+            <form id="ausfallForm">
+                <label for="lehrerName">Lehrername:</label>
+                <input type="text" id="lehrerName" name="lehrerName" required>
+                <label for="ausfallGrund">Grund des Ausfalls:</label>
+                <input type="text" id="ausfallGrund" name="ausfallGrund" required>
+                <button type="submit">Ausfall melden</button>
+            </form>
+        </section>
+        <section id="vertretungsPlan">
+            <h2>Vertretungsplan</h2>
+            <button onclick="erstelleVertretungsplan()">Stundenplan erstellen</button>
+            <div id="stundenplanOutput"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Schul-Vertretungsplan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
